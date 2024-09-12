@@ -28,8 +28,8 @@ function displayUserInfo(user) {
     var userInfo = document.getElementById('user-info');
     userInfo.innerHTML = `
         <img src="${user.avatar_url}" alt="Profile Picture" width="100" height="100">
-        <p><strong>Username:</strong> ${user.name}</p>
-        <p><strong>Bio:</strong> ${user.bio}</p>
+        <p><strong>Name:</strong> ${user.name}</p>
+        <p><strong>Biography:</strong> ${user.bio}</p>
         <p><strong>Followers:</strong> ${user.followers}</p>
         <p><strong>Following:</strong> ${user.following}</p>
     `;
@@ -56,7 +56,7 @@ function displayProjects(repos) {
 
     repos.forEach(function(repo) {
         var repoElement = document.createElement('li');
-        repoElement.textContent = `${repo.name} - Private: ${repo.private}`;
+        repoElement.textContent = `${repo.name} -> Private: ${repo.private}`;
         projectList.appendChild(repoElement);
     });
 }

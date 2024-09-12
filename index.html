@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>GitHub Project Search</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <main>
@@ -13,12 +13,13 @@
             <hr class="my-4">
             <form id="search-form">
                 <div class="form-group">
-                    <label for="exampleInputUsername">Username</label>
+                    <label for="exampleInputUsername">Username :</label>
                     <input type="username" class="form-control" id="username-input"  placeholder="Github username">
+                    <button type="submit">Search</button>
                 </div>                
-                <button type="submit">Search</button>
+                
             </form>
-        </div>
+        
 
         <div class="media">
             <div class="media-body">
@@ -28,6 +29,15 @@
                 <ul id="project-list"></ul>
             </div>
         </div>
+
+        <footer class="bg-body-tertiary text-center text-lg-start " >
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+              © 2024 Github             
+            </div>
+            <!-- Copyright -->
+          </footer>
+    </div>
     </main>
     <script src="js/script.js"></script>
 </body>

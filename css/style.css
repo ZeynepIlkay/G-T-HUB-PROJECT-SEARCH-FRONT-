@@ -1,0 +1,113 @@
+/* Tüm sayfayı ortalamak için */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* main elementine flex container yapısı ekleyelim */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    overflow: auto; /* Taşma durumunda kaydırma çubuğu ekleyelim */
+}
+
+/* jumbotron stilleri */
+.jumbotron {
+    padding: 2rem;
+    background-color: #fff;
+    border: 1px solid #ccc;  /* Gri kenarlık */
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+}
+
+/* GitHub Project Search başlığı için siyah arka plan ve beyaz yazı rengi */
+.display-4 {
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+/* Form alanı stili */
+.form-group {
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Input alanı */
+#username-input {
+    flex-grow: 1;
+    margin-right: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Search butonu stili (arka plan kaldırıldı, gri kenarlık eklendi) */
+button {
+    background-color: transparent;
+    color: black;
+    border: 1px solid #ccc;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #f4f4f4;
+}
+
+/* Search butonuna icon eklenmesi */
+button:before {
+    content: "\1F50D"; /* Unicode büyüteç ikonu */
+    margin-right: 0.5rem;
+}
+
+/* Profile Information ve Repositories başlıkları için siyah arka plan ve büyütme */
+.media-body h5 {
+    background-color: black;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+/* Profil ve repo bilgileri için media alanı */
+.media {
+    margin-top: 2rem;
+    text-align: left;
+}
+
+#user-info img {
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+#project-list {
+    list-style-type: disc; /* Madde işaretleri */
+    padding-left: 20px;  /* Madde işaretleri için boşluk */
+}
+
+#project-list li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #ddd;
+}
