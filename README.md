@@ -1,7 +1,8 @@
 # GitHub Project Search
 
 Bu proje, GitHub REST API kullanarak bir GitHub kullanıcısının profil bilgilerini ve repolarını gösteren basit bir web uygulamasıdır. Kullanıcı adı girilerek GitHub kullanıcı profil bilgileri ve repoları JSON formatında çekilir ve sayfada görüntülenir.
-![image](https://github.com/user-attachments/assets/ba647d0d-f2c8-4810-8075-30bdc883efbd)
+![image](https://github.com/user-attachments/assets/a40466a0-e363-4aa2-85fe-64b37b583056)
+
 
 
 ## Özellikler
