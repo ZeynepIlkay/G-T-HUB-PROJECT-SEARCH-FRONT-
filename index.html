@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- Load icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
     <main>
@@ -16,30 +17,25 @@
             <form id="search-form">
                 <div class="form-group">
                     <label for="exampleInputUsername">Username :</label>
-                    <input type="username" class="form-control" id="username-input"  placeholder="Github username">
-                    <button type="submit" id="search-button"><i class="fa fa-search"></i>Search</button>
+                    <input type="username" class="form-control" id="username-input"  placeholder="Github username" >
+                    <button type="submit" id="search-button"><i class="fa fa-search"></i></button>
                 </div>                
-                
             </form>
         
-        <div class="media">
-            <div class="media-body">
-                <h5 class="mt-0">Profile information</h5>
-                <div id="user-info"></div>
-                <h5 class="mt-4">Repositories</h5>
-                
+            <div class="media">
+                <div class="media-body">
+                    <h5 class="mt-0">Profile information</h5>
+                    <div id="user-info"></div>
+                    <h5 class="mt-4">Repositories</h5>
+                </div>
             </div>
-            
-        </div>
-        <ul id="project-list"></ul>
-        <footer class="bg-body-tertiary text-center text-lg-start " >
-            <!-- Copyright -->
-            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
-              © 2024 Github             
-            </div>
-            <!-- Copyright -->
-          </footer>
-          
+            <ul id="project-list"></ul>
+            <div id="pagination" class="pagination"></div>
+            <footer class="bg-body-tertiary text-center text-lg-start">
+                <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+                    © 2024 Github             
+                </div>
+            </footer>
         </div>
     </main>
     <script src="js/script.js"></script>

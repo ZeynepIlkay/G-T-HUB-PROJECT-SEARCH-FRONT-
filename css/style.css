@@ -3,7 +3,8 @@ body, html {
     height: 100%;
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background: linear-gradient(to right, #f4a7f4, #a1a1f8);
+    
     justify-content: center;
     align-items: center;
 }
@@ -36,7 +37,7 @@ main {
 
 /* GitHub Project Search başlığı için siyah arka plan ve beyaz yazı rengi */
 .display-4 {
-    background-color: black;
+    background-color: #f1d9e5		;
     color: white;
     padding: 1rem;
     border-radius: 5px;
@@ -57,13 +58,14 @@ main {
     padding: 0.5rem;
     border: 1px solid #ccc;
     border-radius: 5px;
+    background: white;
 }
 
 /* Search butonu stili (arka plan kaldırıldı, gri kenarlık eklendi) */
 button {
-    background-color: transparent;
-    color: black;
-    border: 1px solid #ccc;
+    background-color: #f1d9e5;
+    color: white;
+    border: none;
     padding: 0.5rem 1rem;
     border-radius: 5px;
     cursor: pointer;
@@ -78,7 +80,7 @@ button {
 /* Arama ikonu için */
 button i {
     margin-right: 0.5rem;
-    color: grey; /* Gri renk */
+    color: white; /* Gri renk */
     display: inline-block;
     animation: rotateIcon 2s infinite linear; /* Sürekli dönen animasyon */
 }
@@ -96,7 +98,7 @@ button i {
 
 /* Profile Information ve Repositories başlıkları için siyah arka plan ve büyütme */
 .media-body h5 {
-    background-color: black;
+    background-color: #f1d9e5;
     color: white;
     padding: 0.5rem;
     border-radius: 5px;
@@ -123,4 +125,33 @@ button i {
 #project-list li {
     padding: 0.5rem 0;
     border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.page-link {
+    margin: 0 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.page-link.active {
+    font-weight: bold;
+}
+#project-list li a {
+    color: black;
+    text-decoration: none;
+}
+#project-list li a:hover {
+    text-decoration: underline;
+}
+#user-info a {
+    color: black;
+    text-decoration: none;
+}
+#user-info a:hover {
+    text-decoration: underline;
 }
