@@ -2,7 +2,11 @@ document.getElementById('search-form').addEventListener('submit', function(event
     event.preventDefault(); // Formun sayfa yenilemesini engeller
     var username = document.getElementById('username-input').value;
     fetchGitHubData(username);
+
+    // Form gönderildikten sonra yukarı kaydır
+    document.querySelector('main').scrollIntoView({ behavior: 'smooth' });
 });
+
 
 function fetchGitHubData(username) {
     fetchUserInfo(username);
@@ -33,6 +37,8 @@ function displayUserInfo(user) {
         <p><strong>Followers:</strong> ${user.followers}</p>
         <p><strong>Following:</strong> ${user.following}</p>
     `;
+    // Kullanıcı bilgileri yüklendiğinde sayfa yukarı kaydırılır
+    userInfo.scrollIntoView({ behavior: 'smooth' });
 }
 
 function fetchGitHubProjects(username) {
